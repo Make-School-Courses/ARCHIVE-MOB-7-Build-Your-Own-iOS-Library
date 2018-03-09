@@ -8,7 +8,6 @@ The end product of the class will be a library of UI elements built from scratch
 
 Class projects will include the creation of a Make School set of UI elements. Students will all contribute to the library using Github. The goal for each student is to provide at least one new and unique UI element to the library. Students will also create their own customized UI elements that can be used in their own projects.
 
-
 ## Objectives
 
 - Learn the fundamentals of UIKit

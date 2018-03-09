@@ -1,6 +1,14 @@
-# Project Specifications
+# User Interface Project
 
-Each and everyone will be building and shipping(to cocoapods & cocoacontrols) a custom UI component.
+The next project you work on will be a User Interface (UI) element of your own design. You will
+design, code, and contribute your work to an open source project.
+
+The *goal of the project* is to create collection of useful UI elements that will help you and other
+developers make better looking apps faster. *Your goal* is to learn about designing UI elements that
+provide maximum use and flexibility and the tools required to do this.
+
+From the perspective that the UI element you design will see a wide variety use cases
+you will need to provide a wider and more flexible solution than you would normally shoot for.
 
 ## Requirements
 
@@ -18,17 +26,9 @@ Each and everyone will be building and shipping(to cocoapods & cocoacontrols) a 
 Bonus Points:
 - [x] Shipped to Cocoacontrols.com
 
-# UI Control project
 
-The next project you work on will be a User Interface (UI) element of your own design. You will
-design, code, and contribute your work to an open source project.
+## Tools & Concepts
 
-The *goal of the project* is to create collection of useful UI elements that will help you and other
-developers make better looking apps faster. *Your goal* is to learn about designing UI elements that
-provide maximum use and flexibility and the tools required to do this.
-
-From the perspective that the UI element you design will see a wide variety use cases
-you will need to provide a wider and more flexible solution than you would normally shoot for.
 Below are a list of some of the tools and concepts you should think about:
 
 - **IBDesignable**
@@ -40,7 +40,7 @@ Below are a list of some of the tools and concepts you should think about:
     IBDesignable your component will be quick and easy to set up.
 - **Sub classing UIView, UIControl, UIButton, UIImageView ...**
     - Choosing a subclass will allow your component to easily gain functionality in line with it's
-    proposed useage. You can sub class one of the built in UI elements to make a more useful
+    proposed usage. You can sub class one of the built in UI elements to make a more useful
     version of that element.
 - **Implementing a logical set of initializers.**
     - To be useful in many situations your component will need the ability to be configured with
@@ -111,7 +111,7 @@ something that is not on the list.
     - Make custom button with features that are not present in UIButton
 - Loading animation
     - Think of any creative effect for a loading animation.
-        - Bonus make the effect configuable. For example rather than three bouncing circles, configure
+        - Bonus make the effect configurable. For example rather than three bouncing circles, configure
         the number of circles, the size and color of the circles, the speed etc.
 - Counter (has +, -, and a number)
     - This would be an element that lets a user input a number easily. Could be used for selecting
