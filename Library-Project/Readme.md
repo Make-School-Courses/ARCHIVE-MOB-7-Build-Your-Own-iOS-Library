@@ -63,12 +63,6 @@ code with others it needs to be clear, and well documented.
 - Write documentation (this might not be what you think) read the following:
     - http://nshipster.com/swift-documentation/
 
-## Working with Github
-
-You'll submit your work via Github. Follow the instructions here:
-
-- https://github.com/MakeSchool-18/Tweet-Generator
-
 ## Choosing a UI component to create
 
 Choose one of the UI elements from the list below, or invent one of your own. Your component should
@@ -76,34 +70,39 @@ be easy to use, and configurable. It should be able to instantiate from code, an
 It should provide options to configure it's use and appearance, and instantiate itself with sensible
 default values with minimal input.
 
-You must submit something by the end of the quarter!
-
 Your component might have any of the features below.
 
-- Animates
-    - Animation Speed
+- Animation
+    - Scaling
+    - Rotation
+    - Plusating
 - Colors
-    - Foreground color, background color stroke color, gradient colors
+    - Foreground color
+    - Background color stroke color
+    - Gradient colors
 - Gradients
     - Elements that use a gradient fill will need to set the angle of the gradient.
 - Size
     - The size can be set with a method, or the size is determined by the frame of the element's
     view.
-- property indicates if the animation is running
-    - Many animated components will need to expose a property to indicate if they're animation is
-    active.
+- A property that indicates if the animation is running
+    - Many animated components will need to expose a property to indicate if their animation is active.
 - Can be started and stopped.
     - Many animated components will need a property or method that starts or stops their animation.
+
+### Example UI Components
 
 Choose a UI element from the list below to work on, or make up one of your own if you think of
 something that is not on the list.
 
+- Date Picker
+  Some apps need to show a date picker. A user can select a single date or a date range eg. April 14th, 2018 - May 10th 2018
 - Progress indicator
     - Create a progress indicator of your own design. It should have some or all of the follow
     features. Feel free to add more features if you think of them!
 - Thermostat
     - Draw a good thermostat. Indicates temperature or similar measurement graphically.
-- Knob or dial
+- Knob or Dial
     - Design a nifty looking knob or dial. This is a UI element that rotates.
 - Buttons
     - Extend the UIButton class to add features. You can add stroke, gradient fill or an animated

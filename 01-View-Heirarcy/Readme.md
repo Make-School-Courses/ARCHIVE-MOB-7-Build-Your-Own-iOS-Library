@@ -6,32 +6,32 @@ The iOS view hierarchy starts with the Window(UIWindow). The window can have man
 
 1. Download and open this sample project:
 
-[UIKit View Hierarchy](https://github.com/Product-College-Labs/ios-view-hierarcy)
+  [UIKit View Hierarchy Sample Project](https://github.com/Product-College-Labs/ios-view-hierarcy)
 
 2. Click on the View Hierarchy inspector to view a breakdown of all the views in the app. It should look similar to the image below:
 
-![View Debugger](assets/view-debugger.png)
+  ![View Debugger](assets/view-debugger.png)
 
 3. Slide the slider to expand the views:
 
-![Slider Visual Debugger](assets/view-hierarcy-slider.png)
+  ![Slider Visual Debugger](assets/view-hierarcy-slider.png)
 
 
 #### Observation
 
 1. What are some of the view layers you see?
 
-2. What is the type of the first(base) view?
+2. What is the *type* of the first(base) view?
 
 
 ## Experiment
 ### Multiple windows in applications
 
+An iOS application can have multiple windows but typically we will only have one.
 
-An iOS application can have multiple windows
+There are some use cases for having multiple UIWindows in an iOS app. An example will be when you are trying to manipulate the status bar.
 
 Windows are expected to have a root view controller, so when creating one we have to set that up.
-
 
 ### Window Levels
 
@@ -46,4 +46,9 @@ There are three (3) window levels:
 - UIWindowLevelStatusBar
 
 
-Only one window can be "key" at at time. This means that only one Window can be active at a time.
+Only one UIWindow can be _"key"_ at at time. This means that only one Window can be active at a time.
+
+## Experiment
+### Window Levels
+
+Lets play with the window levels to see their effects.
