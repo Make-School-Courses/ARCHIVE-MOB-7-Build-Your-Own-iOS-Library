@@ -93,3 +93,8 @@ Only one UIWindow can be _"key"_ at at time. This means that only one Window can
 ### Window Levels
 
 Lets play with the window levels to see their effects.
+
+
+## Activity
+
+1. In pairs, discuss the hierarchy of display elements in iOS (views) and what they are responsible for.

@@ -4,7 +4,7 @@ As we have learned in the previous lessons a UIView draw itself to the screen. T
 the story. Every UIView has a layer property which is type CALayer. **A UIView doesn't actually
 draw itself to the screen, it draws itself into it's layer.** It's the layer that really
 represents the pixels that we see on the screen. Every view has one layer but, Layers can have
-any number subLayers.
+any number of subLayers.
 
 > Any view you create can be made up of multiple layers on which is drawn various pieces of the element.
 > All of the built in UI widgets (UILabel, UIButton, UISwitch etc.) are created this way!
@@ -14,6 +14,8 @@ of the View drawing on different layers. Layers can be animated.
 
 You can think of layers like views within a view. You can size and draw them very similarly to the
 way you create and drew UIViews in the previous example.
+
+> When building your own UI component, you should make use of CALayers to draw visual elements onto a UIView!
 
 ## Layers properties
 
@@ -38,6 +40,11 @@ Spend a few minutes reading the Apple docs for CALayer
 - https://developer.apple.com/reference/quartzcore/calayer
 
 CALayer also has a few specialized subclasses.
+
+## Types of Layers
+
+### CAShapeLayer
+
 
 ### CAGradientLayer
 
