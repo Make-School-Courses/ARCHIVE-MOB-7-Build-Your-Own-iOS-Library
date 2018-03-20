@@ -1,6 +1,47 @@
 # View Hierarchy
 
-The iOS view hierarchy starts with the Window(UIWindow). The window can have many UIViews, and every UIView can have many subviews. Most apps typically have one Window.
+## Topics
+
+By the end of this lesson we will cover:
+- the basics of UIViews
+- CALayers
+- Subviews and Superview
+- UIViewControllers
+- UIWindows
+
+## UIViews
+
+A view object marks a rectangular area on the screen can that control the drawing of objects. It is responsible for handling and responding to events such as touches and aids other sub components to draw onto a screen(eg iPhone).
+
+Views by themselves aren't very useful, to make use of a UIView, it needs to be added onto a Window( Windows are covered below).
+
+UIViews don't necessarily draw onto the screen but rather provide the infrastructure for drawing onto the screen. Think of UIViews as empty canvases that we can draw unto.
+
+The UIKit framework provides us with some basic UIComponents made out of UIViews(subclasses). Controls like UIButton, UISegmentedControl eg all inherit from UIView and utilize this to draw themselves onto the screen and handle input from users such as tapping a UIButton.
+
+### Superview & Subviews
+
+UIKit uses a lot of Object Oriented Programming principles. Each UIView subclass can have one **superview** and many **subviews**.
+
+The relationship between _superviews_ and _subviews_ are really important and come in handy when discussing the differences between a View's **frame** and its **bounds**.
+
+### Activity
+#### Creating a Custom UIView with XIBs
+
+[Custom UIView with XIBs Starter Project]()
+
+## CALayers
+
+UIViews don't do much other than orchestrate and manage view hierarchy and respond to events. That is where CALayers come in.
+
+Layers are responsible for drawing visual elements onto a view. Every UIView has at least one CALayer object that is backing it.
+
+## UIViewController
+
+
+
+## UIWindow
+iOS applications start with a Window(UIWindow). It is a special subclass of UIView that is responsible for displaying & managing other view(UIViewControllers). The window can have many UIViews & UIViewControllers. Most apps typically have one Window.
 
 ### Activity
 

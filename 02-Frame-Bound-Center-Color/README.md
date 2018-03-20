@@ -1,14 +1,22 @@
-# Using Frame, Bounds, Center, and Color
+# Using Frame, Bounds, and Color
 
-## Objectives
+## Topics
 
 By the end of this class, students will learn:
 - The difference between frame & bounds
 - How to position UI elements on screen using CoreGraphics primitives
 
-A view defines a rectangular area of the screen and what is drawn in that area. To size and position
-a rectangle on the screen you'll use frame, and center. When a view draws within it's own coordinate
-system you'll use bounds. Often you'll want to fill view with a color or an image.
+## Vocabulary
+- coordinate system
+- frame
+- bounds
+- center
+- anchor
+
+## UIView Review
+
+From the previous lesson we learnt that a view defines a rectangular area of a screen and what is drawn in that area. To size and position a rectangle on the screen you will need to use it's frame. When a view draws within it's own **coordinate
+system** you'll use bounds. Often you'll want to fill a view with a color an image, or a pattern.
 
 To do these things UIKit provides classes to help:
 
@@ -23,14 +31,16 @@ The notes here talk about these classes.
 
 **CGSize**
 
-A CGSize defines a width and a height, it contains two properties:
+A CGSize describes how wide and tall a view object should be.
+It defines a width and a height and contains two properties:
 
 - width: The Width.
 - height: The height.
 
 **CGPoint**
 
-A CGPoint defines two properties: x and y.
+A CGPoint describes a point on the screen.
+It defines two properties: x and y.
 
 - x: The horizontal position.
 - y: The vertical position.
@@ -44,7 +54,7 @@ A CGRect contains four values that define a rectangle with a size and location.
 - width: The width.
 - height: The height.
 
-using these four values the system is able to place a rectangle of any size anywhere.
+Using these four values the drawing system is able to place a rectangle of any size anywhere.
 
 A CGRect can also be defined by a point and a size:
 
@@ -69,6 +79,14 @@ Bounds defines a rectangle in a view's own coordinate system.
 **Center**
 
 Center is a CGPoint that sets the position of a view in it's super view around it's center point.
+
+### Drawing in iOS
+
+The drawing system in iOS starts from the upper left side of the screen.
+
+<img src="drawing-system-start.png" width="300">
+<!-- ![Drawing System Start Position](drawing-system-start.png) -->
+> Image courtesy of Apple
 
 ### CGFloat
 
