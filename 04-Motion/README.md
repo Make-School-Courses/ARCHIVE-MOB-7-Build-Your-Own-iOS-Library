@@ -84,11 +84,17 @@ animate an object tat has constraints applied to it there a couple strategies yo
 
 ### UIView.animate() Challenges
 
-- ![UIView Animate challenge 1](uiview-animation-1.gif&s=200)
+| | | |
+| :------------- | :------------- | :------------- |
+| ![UIView Animate challenge 1](uiview-animation-1.gif) | ![UIView Animate challenge 2](uiview-animation-2.gif) | ![UIView Animate challenge 3](uiview-animation-3.gif) |
+| ![UIView Animate challenge 4](uiview-animation-4.gif) | ![UIView Animate challenge 5](uiview-animation-5.gif) | |
 
+
+
+<!-- - ![UIView Animate challenge 1](uiview-animation-1.gif)
 - ![UIView Animate challenge 2](uiview-animation-2.gif)
-- ![UIView Animate challenge 3](uiview-animation-3.gif)
-- ![UIView Animate challenge 4](uiview-animation-4.gif)
-- ![UIView Animate challenge 5](uiview-animation-5.gif)
+- ![UIView Animate challenge 3](uiview-animation-3.gif) -->
+<!-- - ![UIView Animate challenge 4](uiview-animation-4.gif)
+- ![UIView Animate challenge 5](uiview-animation-5.gif) -->
     - This last example was created by anmating only the frame property! I almost exclusively used
     CGRect methods: insetBy() and offsetBy().

@@ -41,10 +41,10 @@ Students should be able to:
 
 - [Intro To UIKit](00-Intro-To-UIKit)
 - [View Heirarcy](01-View-Heirarcy)
-- [Frame, Bounds & Center](02-Frame-Bounds-Center)
-- [Layers](05-Layers)
+- [Frame, Bounds & Center](02-Frame-Bounds)
+- [Layers](03-Layers)
 - [View Lifecycle](04-View-Lifecycle)
-- [Animation - View (CG)](06-Animation-View)
+- [Animation - View (CG)](04-Motion)
 - [Animation - Layers (CA)](07-Animation-Layers)
 - [Animations - Transformation](08-Animation-Transformation)
 - [Circle Math](09-Circle-Math)
