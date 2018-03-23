@@ -71,21 +71,17 @@ Take a minute to read what Apple has to say about CATextLayer.
 
 Use the ideas from the last lesson to build some views that are made of layers.
 
-- Create chessboard with an outer border.
-    - ![Challenge 1](./Challenge-1.png)
-- Create chessboard with image pattern fill.
-    - ![Challenge 2](./Challenge-2.png)
-- Create a layer with a gradient  
-    - ![Challenge 3](./Challenge-3.png)
-- Concentric rectangles change the hue and saturation.
-    - ![Challenge 4](./Challenge-4.png)
-- Imagine this as a UI element that let's us select a number. Note: Probably best to use UILabel for
-    the text elements.
-    - ![Challenge 5](./Challenge-5.png)
-- Add a gradient background.
-    - ![Challenge 6](./Challenge-6.png)
-- Make a couple circle and add a shadow.
-    - ![Challenge 7](./Challenge-7.png)
+| Create chessboard with an outer border. | Create chessboard with image pattern fill. |
+| :------------- | :------------- |
+| ![Challenge 1](./Challenge-1.png) | ![Challenge 2](./Challenge-2.png) |
+
+| Create a layer with a gradient | Concentric rectangles change the hue and saturation. |
+| :------------- | :------------- |
+| ![Challenge 3](./Challenge-3.png) | ![Challenge 4](./Challenge-4.png) |
+
+| Imagine this as a UI element that let's us select a number. Note: Probably best to use UILabel for the text elements. | Add a gradient background. | Make a couple circle and add a shadow. |
+| :------------- | :------------- | :------------- |
+| ![Challenge 5](./Challenge-5.png) | ![Challenge 6](./Challenge-6.png) | ![Challenge 7](./Challenge-7.png) |
 
 ## More information
 
