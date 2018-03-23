@@ -25,9 +25,14 @@ UIKit uses a lot of Object Oriented Programming principles. Each UIView subclass
 
 The relationship between _superviews_ and _subviews_ are really important and come in handy when discussing the differences between a View's **frame** and its **bounds**.
 
+### XIBs, NIBs and dibs
+
+
+
 ### Activity
 #### Creating a Custom UIView with XIBs
 
+Creating custom UIViews in Xcode isn't the most pleasant experience. Unlike creating custom UIViewControllers, custom UIViews don't automatically 'hook up' to their Xib files to their backing `.swift` files.
 [Custom UIView with XIBs Starter Project]()
 
 ## CALayers

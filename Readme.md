@@ -42,7 +42,7 @@ Students should be able to:
 - [Intro To UIKit](00-Intro-To-UIKit)
 - [View Heirarcy](01-View-Heirarcy)
 - [Frame & Bounds](02-Frame-Bounds)
-- [Layers](03-Layers)
+- [Layers & Beziers](03-Layers-&-Beziers)
 - [View Lifecycle](04-View-Lifecycle)
 - [Animation - View (CG)](04-Motion)
 - [Animation - Layers (CA)](07-Animation-Layers)

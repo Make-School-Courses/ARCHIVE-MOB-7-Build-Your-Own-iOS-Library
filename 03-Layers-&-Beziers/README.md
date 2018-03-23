@@ -1,4 +1,4 @@
-# Layers
+# Layers & Beziers
 
 As we have learned in the previous lessons a UIView draw itself to the screen. This is only half
 the story. Every UIView has a layer property which is type CALayer. **A UIView doesn't actually
@@ -41,12 +41,37 @@ Spend a few minutes reading the Apple docs for CALayer
 
 CALayer also has a few specialized subclasses.
 
-## Types of Layers
+## UIBezierPath
 
-### CAShapeLayer
+UIBezierPath lets you create paths that can be used to draw images and animate objects. A path
+consists of straight and curved line segments and is exactly the same as lines you might draw
+with Sketch. The difference only difference between the two is lines drawn with UIBezierPath
+need to be described in code.
+
+UIBezier path only defines the "geometry" of the path. The path is itself `not` the drawing or
+stroke and fill you might create from the path.
+
+`CAShapeLayer` is a layer specialize for rendering a path. Attach a path to a cashapelayer's `path`
+property. Then set these properties to render the path into the layer.
+
+See the videos here for a short tutorial on UIBezierPath:
+
+- https://www.youtube.com/watch?v=9UfcBudmrGI&index=17&list=PLoN_ejT35AEhGkIbBFjn6ACfNfIyQa4Od
+
+### Types of Layers
+
+#### CAShapeLayer
+
+Properties of CAShapeLayer:
+
+- lineWidth
+- strokeColor
+- strokeStart
+- strokeEnd
+- fillColor
 
 
-### CAGradientLayer
+#### CAGradientLayer
 
 CAGradientLayer is a subclass of CALayer that is specialized to draw a gradient with it's area.
 Anytime you want a gradient this is probably your best choice.
@@ -55,7 +80,7 @@ Take a few minutes to read the Apple docs:
 
 - https://developer.apple.com/reference/quartzcore/cagradientlayer
 
-### CATextLayer
+#### CATextLayer
 
 CATextLayer is used to draw a layer that contains text. Use this to add text to a UI element or
 custom control. This is probably at the heart of UILabel, and UITextField. If you are making your
@@ -86,3 +111,12 @@ Use the ideas from the last lesson to build some views that are made of layers.
 ## More information
 
 - https://www.raywenderlich.com/90488/calayer-in-ios-with-swift-10-examples
+
+
+## Resources
+
+### UIBezierPath
+
+https://developer.apple.com/reference/uikit/uibezierpath
+- https://developer.apple.com/reference/quartzcore/cashapelayer
+- https://developer.apple.com/reference/quartzcore/cagradientlayer
