@@ -46,13 +46,13 @@ Students should be able to:
 - [View Lifecycle](04-View-Lifecycle)
 - [Animation - View Based](04-Motion)
 - [Animation - Layer Based](07-Animation-Layers)
-- [Programming Lab - Library Project]()
-- [Circle Math](09-Circle-Math)
-- [Particle Effects with CAEmitter Layer](10-CAEmitterLayer)
-- [Contributing to Open Source - Cococapods & Cocoacontrols](15-Cocoapods)
-- [Handling User Interactions - Touches](11-Handling-Interactions)
-- [ Handling User Interactions - Gesture Recognizers](13-Handling-Interactions-Gestures)
-- [Programming Lab & Project Demos]()
+- [Library Project - Introduction & Specifications](Library-Project)
+- [Circle Math](07-Circle-Math)
+- [Particle Effects with CAEmitter Layer](CAEmitterLayer)
+- [Contributing to Open Source - Cococapods & Cocoacontrols](08-Cocoapods)
+- [Handling User Interactions - Touches](09-Handling-Interactions-Touches)
+- [ Handling User Interactions - Gesture Recognizers](10-Handling-Interactions-Touches)
+- [Project Demos]()
 
 
 ## Evaluations
