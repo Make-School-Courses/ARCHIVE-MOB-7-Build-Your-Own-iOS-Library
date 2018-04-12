@@ -39,23 +39,21 @@ Students should be able to:
 
 ## Course Schedule
 
-- [Intro To UIKit](00-Intro-To-UIKit)
+- [Introduction to UIKit, class policies, syllabus review](00-Intro-To-UIKit)
 - [View Heirarcy](01-View-Heirarcy)
-- [Frame & Bounds](02-Frame-Bounds)
+- [Positioning - Frame, Bounds, Center & Origin](02-Frame-Bounds)
 - [Layers & Beziers](03-Layers-&-Beziers)
 - [View Lifecycle](04-View-Lifecycle)
-- [Animation - View (CG)](04-Motion)
-- [Animation - Layers (CA)](07-Animation-Layers)
-- [Animations - Transformation](08-Animation-Transformation)
+- [Animation - View Based](04-Motion)
+- [Animation - Layer Based](07-Animation-Layers)
+- [Programming Lab - Library Project]()
 - [Circle Math](09-Circle-Math)
 - [Particle Effects with CAEmitter Layer](10-CAEmitterLayer)
-- [UIBezierPath](11-UIBezierPath)
-- [Responder Chain](03-Responder-Chain)
-- [Handling Interactions](11-Handling-Interactions)
-- [Handling Interactions - UIEvent](12-Handling-Interactions-UIEvent)
-- [Handling Interactions - Gestures](13-Handling-Interactions-Gestures)
-- [Micro Interaction Project](14-Micro-Interaction-Project)
-- [Cocoapods - View, Contribute](15-Cocoapods)
+- [Contributing to Open Source - Cococapods & Cocoacontrols](15-Cocoapods)
+- [Handling User Interactions - Touches](11-Handling-Interactions)
+- [ Handling User Interactions - Gesture Recognizers](13-Handling-Interactions-Gestures)
+- [Programming Lab & Project Demos]()
+
 
 ## Evaluations
 

@@ -25,15 +25,24 @@ UIKit uses a lot of Object Oriented Programming principles. Each UIView subclass
 
 The relationship between _superviews_ and _subviews_ are really important and come in handy when discussing the differences between a View's **frame** and its **bounds**.
 
-### XIBs, NIBs and dibs
+### Interface Objects - XIBs, NIBs
+Interface objects are used to represent visual and non-visual elements. They can represent views, windows, menus and controls but are also used to represent non-visual elements such as gesture recognizers.
 
+#### File's Owner
+The File's Owner object is unlike other interface objects. It serves as a link between your Interface Object and its connection in code. You can think of it as a controller for your interface object.
 
 
 ### Activity
 #### Creating a Custom UIView with XIBs
 
 Creating custom UIViews in Xcode isn't the most pleasant experience. Unlike creating custom UIViewControllers, custom UIViews don't automatically 'hook up' to their Xib files to their backing `.swift` files.
+
 [Custom UIView with XIBs Starter Project]()
+
+#### Guidelines for creating custom XIBs
+
+- Break down user interfaces to modular XIBs
+- Create custom XIB interfaces for frequently used custom components. eg. A custom UIButton
 
 ## CALayers
 
