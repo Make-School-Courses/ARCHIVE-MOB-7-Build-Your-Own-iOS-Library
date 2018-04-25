@@ -8,7 +8,7 @@ See the slides here and watch the videos here:
 - Watch videos 04-01 to 04-03
     - https://www.youtube.com/watch?v=huCBsPNhWVU&list=PLoN_ejT35AEhGkIbBFjn6ACfNfIyQa4Od&index=14
 
-## Challenges 
+## Challenges
 
 Try these challenges. Build each of these as a simple single view application. The samples are
 animated gif's try the animation also.

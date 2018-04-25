@@ -17,7 +17,7 @@ Views by themselves aren't very useful, to make use of a UIView, it needs to be 
 
 UIViews don't necessarily draw onto the screen but rather provide the infrastructure for drawing onto the screen. Think of UIViews as empty canvases that we can draw unto.
 
-The UIKit framework provides us with some basic UIComponents made out of UIViews(subclasses). Controls like UIButton, UISegmentedControl eg all inherit from UIView and utilize this to draw themselves onto the screen and handle input from users such as tapping a UIButton.
+The UIKit framework provides us with some basic UIComponents made out of UIViews(subclasses). Controls like UIButton, UISegmentedControl all inherit from UIView and utilize this to draw themselves onto the screen and handle input from users such as tapping a UIButton.
 
 ### Superview & Subviews
 
@@ -25,24 +25,64 @@ UIKit uses a lot of Object Oriented Programming principles. Each UIView subclass
 
 The relationship between _superviews_ and _subviews_ are really important and come in handy when discussing the differences between a View's **frame** and its **bounds**.
 
+### Creating Custom Views
+There are 3 different ways of creating custom views; Storyboards, Nib files and Programmatically. We will start with Nib/Xib files as these are the most common way of creating custom views.
+
+
 ### Interface Objects - XIBs, NIBs
 Interface objects are used to represent visual and non-visual elements. They can represent views, windows, menus and controls but are also used to represent non-visual elements such as gesture recognizers.
 
+When creating custom views with Xibs, you first create the .swift file that will contain the subclass of UIView which will handle all the interactions with the view. Creating a Xib file next will enable you to design all your user interface elements visually then you can later connect the Xib file to the .swift file.
+
+#### UIView initializers
+
+UIViews can be initialized in two different ways, through its base initializer from frame:
+
+1.
+```swift
+override init(frame: CGRect) {
+        super.init(frame: frame)  
+}
+```
+
+2.
+And/or through its Xib initialer:
+
+```swift
+required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)    
+}
+```
+
+*Note*
+When you attach a Xib file to a custom UIView, and display the custom view through interface builder, the UIView will be initialized with the 2nd initializer.
+
+#### Activity
+#### Q&A
+
+1. Why is the initializer from a Xib initialized with NSCoder?
+2. How do we know which initializer will be called when creating a UIView that can be instantiated both programmatically and with Xib files?
+3. Why do we setup the Xib files in both initializers?
+
 #### File's Owner
 The File's Owner object is unlike other interface objects. It serves as a link between your Interface Object and its connection in code. You can think of it as a controller for your interface object.
-
 
 ### Activity
 #### Creating a Custom UIView with XIBs
 
 Creating custom UIViews in Xcode isn't the most pleasant experience. Unlike creating custom UIViewControllers, custom UIViews don't automatically 'hook up' to their Xib files to their backing `.swift` files.
 
-[Custom UIView with XIBs Starter Project]()
+[Custom UIView with XIBs Starter Project](https://github.com/Product-College-Labs/ios-custom-views.git)
 
 #### Guidelines for creating custom XIBs
 
 - Break down user interfaces to modular XIBs
 - Create custom XIB interfaces for frequently used custom components. eg. A custom UIButton
+
+## Storyboards
+
+#### Scene Dock
+
 
 ## CALayers
 

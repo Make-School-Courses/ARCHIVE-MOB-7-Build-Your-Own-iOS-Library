@@ -39,7 +39,7 @@ Students should be able to:
 
 ## Course Schedule
 
-- [Introduction to UIKit, class policies, syllabus review](00-Intro-To-UIKit)
+- [Introduction to UIKit, class policies, syllabus review](00-Intro)
 - [View Heirarcy](01-View-Heirarcy)
 - [Positioning - Frame, Bounds, Center & Origin](02-Frame-Bounds)
 - [Layers & Beziers](03-Layers-&-Beziers)
