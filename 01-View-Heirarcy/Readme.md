@@ -4,8 +4,11 @@
 
 By the end of this lesson we will cover:
 - the basics of UIViews
+- interface objects
 - CALayers
 - Subviews and Superview
+- Creating custom uiviews
+- loading Xibs from the bundle
 - UIViewControllers
 - UIWindows
 
@@ -27,7 +30,6 @@ The relationship between _superviews_ and _subviews_ are really important and co
 
 ### Creating Custom Views
 There are 3 different ways of creating custom views; Storyboards, Nib files and Programmatically. We will start with Nib/Xib files as these are the most common way of creating custom views.
-
 
 ### Interface Objects - XIBs, NIBs
 Interface objects are used to represent visual and non-visual elements. They can represent views, windows, menus and controls but are also used to represent non-visual elements such as gesture recognizers.
@@ -54,6 +56,9 @@ required init?(coder aDecoder: NSCoder) {
 }
 ```
 
+#### File's Owner
+The File's Owner object is unlike other interface objects. It serves as a link between your Interface Object and its connection in code. You can think of it as a controller for your interface object.
+
 *Note*
 When you attach a Xib file to a custom UIView, and display the custom view through interface builder, the UIView will be initialized with the 2nd initializer.
 
@@ -64,13 +69,12 @@ When you attach a Xib file to a custom UIView, and display the custom view throu
 2. How do we know which initializer will be called when creating a UIView that can be instantiated both programmatically and with Xib files?
 3. Why do we setup the Xib files in both initializers?
 
-#### File's Owner
-The File's Owner object is unlike other interface objects. It serves as a link between your Interface Object and its connection in code. You can think of it as a controller for your interface object.
-
 ### Activity
 #### Creating a Custom UIView with XIBs
 
 Creating custom UIViews in Xcode isn't the most pleasant experience. Unlike creating custom UIViewControllers, custom UIViews don't automatically 'hook up' to their Xib files to their backing `.swift` files.
+
+Clone the starter repo below:
 
 [Custom UIView with XIBs Starter Project](https://github.com/Product-College-Labs/ios-custom-views.git)
 
@@ -82,7 +86,7 @@ Creating custom UIViews in Xcode isn't the most pleasant experience. Unlike crea
 ## Storyboards
 
 #### Scene Dock
-
+The scene dock is a interface builder feature that allows you to place user interface elements on top of a scene (UIViewController). This allows you to move interface elements that will be loaded or added at a later point to your scene.
 
 ## CALayers
 
@@ -95,7 +99,7 @@ Layers are responsible for drawing visual elements onto a view. Every UIView has
 
 
 ## UIWindow
-iOS applications start with a Window(UIWindow). It is a special subclass of UIView that is responsible for displaying & managing other view(UIViewControllers). The window can have many UIViews & UIViewControllers. Most apps typically have one Window.
+iOS applications start with a Window(UIWindow). It is a special subclass of UIView that is responsible for displaying & managing other views(UIViewControllers). The window can have many UIViews & UIViewControllers. Most apps typically have one Window.
 
 ### Activity
 
@@ -147,7 +151,6 @@ Only one UIWindow can be _"key"_ at at time. This means that only one Window can
 ### Window Levels
 
 Lets play with the window levels to see their effects.
-
 
 ## Activity
 
