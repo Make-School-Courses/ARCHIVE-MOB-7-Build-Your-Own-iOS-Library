@@ -74,10 +74,17 @@ required init?(coder aDecoder: NSCoder) {
 
 #### XIB Loading
 
-This gets called when a view has been initialized from a XIB file
+This gets called when a view has been initialized from a XIB file.
+
+> The nib-loading infrastructure sends an awakeFromNib message to each object recreated from a nib archive
+
+> When an object receives an awakeFromNib message, it is guaranteed to have all its outlet and action connections already established.
+- Apple Documentation
+
 
 ```swift
 override awakeFromNib() {
+  super.awakeFromNib()
 	// After initialization (all Outlets will be connected)
 }
 ```
