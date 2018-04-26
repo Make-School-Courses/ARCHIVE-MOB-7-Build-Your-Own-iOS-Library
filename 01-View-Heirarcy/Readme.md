@@ -4,10 +4,10 @@
 
 By the end of this lesson we will cover:
 - the basics of UIViews
+- creating custom UIViews
 - interface objects
-- CALayers
-- Subviews and Superview
-- Creating custom uiviews
+- Layers
+- subviews and superviews
 - loading Xibs from the bundle
 - UIViewControllers
 - UIWindows
