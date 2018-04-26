@@ -32,23 +32,38 @@ The relationship between _superviews_ and _subviews_ are really important and co
 There are 3 different ways of creating custom views; Storyboards, Nib files and Programmatically. We will start with Nib/Xib files as these are the most common way of creating custom views.
 
 ### Interface Objects - XIBs, NIBs
+
+#### What are XIBs and NIBs?
+
+*NIBs*
+> Nibs, known as NeXT Interface Builder files, are actually compiled from xib files and act as a “bundle” that contain all of its relevant files. This is what old-school iOS developers had to work with, but, for most of us, you can think of nibs as the final product in the lifecycle of a custom view.
+
+*XIBs*
+> Xibs, known as XML Interface Builder files, are what most of us are familiar with. Create a new user-interface file on Xcode and take a look at the extension — xib! Whenever you are working on a custom interface in Xcode, you are working in a xib. Xibs were introduced in Xcode 3.0 as a way of addressing the common issue of version control associated with nibs.
+
+>> https://www.prolificinteractive.com/2017/06/09/xib-awakening-uniform-way-load-xibs/
+
 Interface objects are used to represent visual and non-visual elements. They can represent views, windows, menus and controls but are also used to represent non-visual elements such as gesture recognizers.
 
 When creating custom views with Xibs, you first create the .swift file that will contain the subclass of UIView which will handle all the interactions with the view. Creating a Xib file next will enable you to design all your user interface elements visually then you can later connect the Xib file to the .swift file.
+
+#### Activity
+
+Lets preview a compiled XIB to NIB file in an application's bundle in Xcode.
+
 
 #### UIView initializers
 
 UIViews can be initialized in two different ways, through its base initializer from frame:
 
-1.
+1. Programatic
 ```swift
 override init(frame: CGRect) {
         super.init(frame: frame)  
 }
 ```
 
-2.
-And/or through its Xib initialer:
+2. Through its Xib initialer:
 
 ```swift
 required init?(coder aDecoder: NSCoder) {
