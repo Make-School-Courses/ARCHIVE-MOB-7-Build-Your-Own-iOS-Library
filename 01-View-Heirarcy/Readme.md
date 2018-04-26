@@ -96,7 +96,14 @@ Layers are responsible for drawing visual elements onto a view. Every UIView has
 
 ## UIViewController
 
+UIViewController responsibilities:
+> A view controller’s main responsibilities include the following:
+  - Updating the contents of the views, usually in response to changes to the underlying data.
+  - Responding to user interactions with views.
+  - Resizing views and managing the layout of the overall interface.
+  - Coordinating with other objects—including other view controllers—in your app.
 
+- *Apple Documentation*
 
 ## UIWindow
 iOS applications start with a Window(UIWindow). It is a special subclass of UIView that is responsible for displaying & managing other views(UIViewControllers). The window can have many UIViews & UIViewControllers. Most apps typically have one Window.
@@ -140,14 +147,13 @@ Windows are expected to have a root view controller, so when creating one we hav
 
 Windows also have hierarchy, we can set the level of each window to display one window above another:
 
-![UIWindow Level](assets/uiwindow-levels.png)
+<!-- ![UIWindow Level](assets/uiwindow-levels.png) -->
 
 There are three (3) window levels:
 
 - UIWindowLevelNormal
 - UIWindowLevelAlert
 - UIWindowLevelStatusBar
-
 
 Only one UIWindow can be _"key"_ at at time. This means that only one Window can be active at a time.
 
