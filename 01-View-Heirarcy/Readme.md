@@ -122,7 +122,6 @@ iOS applications start with a Window(UIWindow). It is a special subclass of UIVi
 
 2. What is the *type* of the first(base) view?
 
-
 ## Experiment
 ### Multiple windows in applications
 
@@ -131,6 +130,11 @@ An iOS application can have multiple windows but typically we will only have one
 There are some use cases for having multiple UIWindows in an iOS app. An example will be when you are trying to manipulate the status bar.
 
 Windows are expected to have a root view controller, so when creating one we have to set that up.
+
+### Activity
+#### Q&A
+
+1. What do you think are some use cases for using multiple UIWindows?
 
 ### Window Levels
 
