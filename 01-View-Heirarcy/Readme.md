@@ -54,10 +54,23 @@ And/or through its Xib initialer:
 required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)    
 }
+
+```
+
+#### XIB Loading
+
+This gets called when a view has been initialized from a XIB file
+
+```swift
+override awakeFromNib() {
+	// After initialization (all Outlets will be connected)
+}
 ```
 
 #### File's Owner
 The File's Owner object is unlike other interface objects. It serves as a link between your Interface Object and its connection in code. You can think of it as a controller for your interface object.
+
+It is the “controller” that handles the contents of the XIB file
 
 *Note*
 When you attach a Xib file to a custom UIView, and display the custom view through interface builder, the UIView will be initialized with the 2nd initializer.
@@ -104,6 +117,10 @@ UIViewController responsibilities:
   - Coordinating with other objects—including other view controllers—in your app.
 
 - *Apple Documentation*
+
+- UIViewController is backed by a main UIView(root view).
+- Manages view hierarchy
+
 
 ## UIWindow
 iOS applications start with a Window(UIWindow). It is a special subclass of UIView that is responsible for displaying & managing other views(UIViewControllers). The window can have many UIViews & UIViewControllers. Most apps typically have one Window.
@@ -155,6 +172,21 @@ There are three (3) window levels:
 - UIWindowLevelAlert
 - UIWindowLevelStatusBar
 
+let UIWindowLevelNormal: UIWindowLevel
+
+> The default level. Use this level for the majority of your content, including for your app’s main window.
+
+let UIWindowLevelAlert: UIWindowLevel
+
+> The level for an alert view. Windows at this level appear on top of windows at the UIWindowLevelNormal level.
+
+let UIWindowLevelStatusBar: UIWindowLevel
+
+> The level for a status window. Windows at this level appear on top of windows at the UIWindowLevelAlert level.
+
+![Window Levels](assets/window-levels.png)
+
+#### Key & Visible Windows
 Only one UIWindow can be _"key"_ at at time. This means that only one Window can be active at a time.
 
 ## Experiment
