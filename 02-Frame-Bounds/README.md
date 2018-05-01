@@ -13,6 +13,12 @@ By the end of this class, students will learn:
 - center
 - anchor
 
+## Class Materials
+
+Slides:
+
+[Frame, Bounds, Center & Color](frame-bounds.key)
+
 ## UIView Review
 
 From the previous lesson we learnt that a view defines a rectangular area of a screen and what is drawn in that area. To size and position a rectangle on the screen you will need to use it's frame. When a view draws within it's own **coordinate
@@ -242,6 +248,20 @@ that view with image tiled.
 
 Here are a few exercises to test out your knowledge of the material here:
 
+| Make a view that fills the screen with a 20 pixel margin | Make an 8 by 8 grid that fills the screen. Color every other square black and white, like a chess board |
+| :------------- | :------------- |
+| ![Challenge 1](./challenge-1.png) | ![Challenge 2](./challenge-2.png)
+
+
+
+| Make rainbow of views, rectangles stacked vertically | Make concentric squares where the saturation changes from 1 to 0 for a single color | Recreate the example with patterns
+| :------------- | :------------- |
+| ![Challenge 1](./challenge-3.png) | ![Challenge 2](./challenge-4.png) | ![Challenge 2](./challenge-5.png)
+
+
+
+<!-- Here are a few exercises to test out your knowledge of the material here:
+
 - Make a view that fills the screen with a 20 pixel margin.
     - ![Challenge-1](./challenge-1.png)
 - Make an 8 by 8 grid that fills the screen. Color every other square black and white. Like a chess board.
@@ -251,4 +271,4 @@ Here are a few exercises to test out your knowledge of the material here:
 - Make concentric squares where the saturation changes from 1 to 0 for a single color.
     - ![Challenge-4](./challenge-4.png)
 - Recreate the example.
-    - ![Challenge-5](./challenge-5.png)
+    - ![Challenge-5](./challenge-5.png) -->
