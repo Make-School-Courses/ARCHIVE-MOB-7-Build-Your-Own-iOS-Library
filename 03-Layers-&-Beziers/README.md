@@ -1,5 +1,12 @@
 # Layers & Beziers
 
+## Class Materials
+
+Slides:
+
+[Layers & Beziers](layers-beziers.key)
+
+## Layers
 As we have learned in the previous lessons a UIView draw itself to the screen. This is only half
 the story. Every UIView has a layer property which is type CALayer. **A UIView doesn't actually
 draw itself to the screen, it draws itself into it's layer.** It's the layer that really
@@ -104,9 +111,13 @@ Use the ideas from the last lesson to build some views that are made of layers.
 | :------------- | :------------- |
 | ![Challenge 3](./Challenge-3.png) | ![Challenge 4](./Challenge-4.png) |
 
-| Imagine this as a UI element that let's us select a number. Note: Probably best to use UILabel for the text elements. | Add a gradient background. | Make a couple circle and add a shadow. |
-| :------------- | :------------- | :------------- |
-| ![Challenge 5](./Challenge-5.png) | ![Challenge 6](./Challenge-6.png) | ![Challenge 7](./Challenge-7.png) |
+| Recreate this skyline | Make a couple circle and add a shadow. |
+| :------------- | :------------- |
+| ![Challenge 8](./Challenge-8.png) | ![Challenge 7](./Challenge-7.png) |
+
+| Imagine this as a UI element that let's us select a number. Note: Probably best to use UILabel for the text elements. | Add a gradient background.|
+| :------------- | :------------- |
+| ![Challenge 5](./Challenge-5.png) | ![Challenge 6](./Challenge-6.png) |
 
 ## More information
 
