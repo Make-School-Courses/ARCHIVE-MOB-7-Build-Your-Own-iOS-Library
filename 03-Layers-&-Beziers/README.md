@@ -52,13 +52,13 @@ CALayer also has a few specialized subclasses.
 
 UIBezierPath lets you create paths that can be used to draw images and animate objects. A path
 consists of straight and curved line segments and is exactly the same as lines you might draw
-with Sketch. The difference only difference between the two is lines drawn with UIBezierPath
+with Sketch. The only difference between the two is lines drawn with UIBezierPath
 need to be described in code.
 
 UIBezier path only defines the "geometry" of the path. The path is itself `not` the drawing or
 stroke and fill you might create from the path.
 
-`CAShapeLayer` is a layer specialize for rendering a path. Attach a path to a cashapelayer's `path`
+`CAShapeLayer` is a layer specialized for rendering a path. Attach a path to a cashapelayer's `path`
 property. Then set these properties to render the path into the layer.
 
 See the videos here for a short tutorial on UIBezierPath:
@@ -91,8 +91,8 @@ Take a few minutes to read the Apple docs:
 
 CATextLayer is used to draw a layer that contains text. Use this to add text to a UI element or
 custom control. This is probably at the heart of UILabel, and UITextField. If you are making your
-own control with text you might compose your control with a Text Layer if you text needs are simple
-or require close control over how text is drawn. Alternatively you might add a UILayer or UITextField
+own control with text you might compose your control with a Text Layer if your text needs are simple
+or require close control over how text is drawn. Alternatively, you might add a UILayer or UITextField
 as a sub view.
 
 Take a minute to read what Apple has to say about CATextLayer.
