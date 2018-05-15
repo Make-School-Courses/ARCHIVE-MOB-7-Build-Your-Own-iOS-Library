@@ -8,9 +8,6 @@ Layer properties are animated. When you change the property of a layer, it is an
 
 Layers are lightweight. Layers are lighter-weight than views, and therefore they help you achieve better performance.
 
-## Line Join Types
-
-
 ## Animations
 
 There are a few ways to create animations, you can do them implicitly or explicitly.
@@ -37,6 +34,9 @@ Implicit and explicit animations normally begin executing after the current run 
 - CABasicAnimation
 - CAKeyFrameAnimation
 
+## GroupAnimations
+
+We can group animations together using CAGroupAnimation. You can add animations and synchronize them.
 <!-- ## Timing Animations
 CATimingAnimation -->
 
