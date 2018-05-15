@@ -6,6 +6,10 @@ Slides:
 
 [Layers & Beziers](layers-beziers.key)
 
+Beziers:
+
+[How computers draw bezier curves](https://vimeo.com/106757336)
+
 ## Layers
 As we have learned in the previous lessons a UIView draw itself to the screen. This is only half
 the story. Every UIView has a layer property which is type CALayer. **A UIView doesn't actually

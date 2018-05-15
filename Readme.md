@@ -47,6 +47,7 @@ Students should be able to:
 - [Animation - View Based](04-Motion)
 - [Animation - Layer Based](07-Animation-Layers)
 - [Library Project - Introduction & Specifications](Library-Project)
+- [Animation - UIDynamics](11-UIDynamics)
 - [Circle Math](07-Circle-Math)
 - [Particle Effects with CAEmitter Layer](CAEmitterLayer)
 - [Contributing to Open Source - Cococapods & Cocoacontrols](08-Cocoapods)
