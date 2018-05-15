@@ -45,7 +45,7 @@ Students should be able to:
 - [Layers & Beziers](03-Layers-&-Beziers)
 - [View Lifecycle](04-View-Lifecycle)
 - [Animation - View Based](04-Motion)
-- [Animation - Layer Based](07-Animation-Layers)
+- [Animation - Layer Based](06-Animation-Layer-Based)
 - [Library Project - Introduction & Specifications](Library-Project)
 - [Animation - UIDynamics](11-UIDynamics)
 - [Circle Math](07-Circle-Math)
