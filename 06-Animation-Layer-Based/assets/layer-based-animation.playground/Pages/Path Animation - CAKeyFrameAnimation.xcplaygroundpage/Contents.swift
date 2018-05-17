@@ -36,7 +36,7 @@ path.addCurve(to: point2, controlPoint1: control2, controlPoint2: control3)
 path.addCurve(to: point3, controlPoint1: control4, controlPoint2: control5)
 
 shape.path = path.cgPath
-shape.strokeColor = UIColor.red.cgColor
+shape.strokeColor = UIColor.clear.cgColor
 shape.lineWidth = 5
 shape.strokeStart = 0
 shape.strokeEnd = 0.2
@@ -47,12 +47,12 @@ view.layer.addSublayer(shape)
 
 let strokeStartAnim = CABasicAnimation()
 strokeStartAnim.toValue = 0.7
-strokeStartAnim.repeatCount = 100
+strokeStartAnim.repeatCount = Float.infinity
 strokeStartAnim.keyPath = #keyPath(CAShapeLayer.strokeStart)
 
 let strokeEndAnim = CABasicAnimation()
 strokeEndAnim.toValue = 1
-strokeEndAnim.repeatCount = Float(Int.max)
+strokeEndAnim.repeatCount = Float.infinity
 strokeEndAnim.keyPath = #keyPath(CAShapeLayer.strokeEnd)
 
 let groupAnim = CAAnimationGroup()
@@ -62,7 +62,8 @@ groupAnim.beginTime = 0
 groupAnim.speed = 1
 groupAnim.autoreverses = true
 groupAnim.repeatCount = .greatestFiniteMagnitude
-shape.add(groupAnim, forKey: "groupAnimation")
+//shape.add(groupAnim, forKey: "groupAnimation")
+
 
 let trackLayer = CAShapeLayer()
 trackLayer.fillColor = UIColor.blue.cgColor
@@ -76,8 +77,9 @@ keyFrameAnim.isRemovedOnCompletion = true
 keyFrameAnim.duration = 3
 keyFrameAnim.calculationMode = kCAAnimationLinear
 keyFrameAnim.repeatCount = Float(Int.max)
-//trackLayer.add(keyFrameAnim, forKey: "keyframe")
-//shape.addSublayer(trackLayer)
+
+shape.addSublayer(trackLayer)
+trackLayer.add(keyFrameAnim, forKey: "keyframe")
 
 
 //: [Next](@next)

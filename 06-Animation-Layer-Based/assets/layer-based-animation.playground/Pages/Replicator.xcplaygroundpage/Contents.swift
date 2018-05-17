@@ -18,6 +18,7 @@ repLayer.backgroundColor = UIColor.yellow.cgColor
 view.layer.addSublayer(repLayer)
 
 let replicatorLayer = CAReplicatorLayer()
+
 replicatorLayer.frame = view.bounds
 replicatorLayer.instanceCount = 30
 replicatorLayer.instanceDelay = CFTimeInterval(1 / 30.0)
@@ -30,6 +31,9 @@ replicatorLayer.instanceBlueOffset = -0.01
 replicatorLayer.instanceAlphaOffset = 0.0
 
 var t = CATransform3DMakeTranslation(20, 0, 0)
+
+
+t = CATransform3DMakeRotation(CGFloat(10), 0, 0, 1)
 
 replicatorLayer.instanceTransform = t
 
