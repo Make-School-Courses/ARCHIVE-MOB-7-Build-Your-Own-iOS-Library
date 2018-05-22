@@ -11,7 +11,7 @@ Slides:
 UIDynamics & Particles Sample Project:
 
 [UIDynamics & Particles Sample Project](https://github.com/Product-College-Labs/uikit-dynamics-and-particle-generators.git)
-\
+
 ## Challenges
 
 
