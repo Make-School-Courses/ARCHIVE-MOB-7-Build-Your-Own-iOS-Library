@@ -13,4 +13,4 @@ Slides:
 
 | Twitter Like     | Medium Clap     | Trash Empty
 | :------------- | :------------- |
-| ![](assets/twitter-like.gif) | ![](assets/medium-clap.gif) | ![](assets/trash.gif)
+| ![](assets/twitter-like.gif) | ![](assets/medium-clap.gif) | ![](assets/trash.gif) |
