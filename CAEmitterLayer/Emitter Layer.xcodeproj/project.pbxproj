@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05026D0120B49E1600C8F8DE /* rocket.png in Resources */ = {isa = PBXBuildFile; fileRef = 05026D0020B49E1600C8F8DE /* rocket.png */; };
 		D82AB4771E56225C004ABC18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82AB4761E56225C004ABC18 /* AppDelegate.swift */; };
 		D82AB4791E56225C004ABC18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82AB4781E56225C004ABC18 /* ViewController.swift */; };
 		D82AB47C1E56225C004ABC18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82AB47A1E56225C004ABC18 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05026D0020B49E1600C8F8DE /* rocket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rocket.png; sourceTree = "<group>"; };
 		D82AB4731E56225C004ABC18 /* Emitter Layer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emitter Layer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82AB4761E56225C004ABC18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D82AB4781E56225C004ABC18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 				D82AB4751E56225C004ABC18 /* Emitter Layer */,
 				D82AB4741E56225C004ABC18 /* Products */,
 				D82AB4881E562341004ABC18 /* 26.png */,
+				05026D0020B49E1600C8F8DE /* rocket.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,7 +102,7 @@
 				TargetAttributes = {
 					D82AB4721E56225C004ABC18 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 753UQ7TNXJ;
+						DevelopmentTeam = F7AL96RPTB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05026D0120B49E1600C8F8DE /* rocket.png in Resources */,
 				D82AB4811E56225C004ABC18 /* LaunchScreen.storyboard in Resources */,
 				D82AB4891E562341004ABC18 /* 26.png in Resources */,
 				D82AB47E1E56225C004ABC18 /* Assets.xcassets in Resources */,
@@ -263,7 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 753UQ7TNXJ;
+				DEVELOPMENT_TEAM = F7AL96RPTB;
 				INFOPLIST_FILE = "Emitter Layer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.makeschool.Emitter-Layer";
@@ -276,7 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 753UQ7TNXJ;
+				DEVELOPMENT_TEAM = F7AL96RPTB;
 				INFOPLIST_FILE = "Emitter Layer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.makeschool.Emitter-Layer";
@@ -304,6 +308,7 @@
 				D82AB4871E56225C004ABC18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,41 +10,36 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    let emitter = CAEmitterLayer()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
-        let emitter = CAEmitterLayer()
-        emitter.position = view.center
-        emitter.bounds = view.bounds
+        
+//        emitter.bounds = view.bounds
+//        emitter.frame = view.frame
         emitter.backgroundColor = UIColor.magenta.cgColor
-        
         emitter.birthRate = 22
+        emitter.emitterShape = kCAEmitterLayerLine
+        emitter.position = CGPoint(x: 200, y: 300)
         
         let cell = CAEmitterCell()
-        cell.lifetime = 6
-        cell.lifetimeRange = 2
-        cell.birthRate = 15
-        cell.velocity = 100
-        cell.emissionLongitude = CGFloat(M_PI * 2)
+        cell.lifetime = 4
+        cell.lifetimeRange = 0.8
+        cell.birthRate = 1
+        cell.velocity = 50
+        cell.emissionLatitude = (4 * .pi) / 3
+        cell.emissionLongitude = (5 * .pi) / 3
+        cell.emissionRange = (4 * .pi) / 3
         cell.contents = UIImage(named: "26")!.cgImage
-        // cell.color = UIColor.black.cgColor
+//         cell.color = UIColor.black.cgColor
         cell.speed = 0.3
         cell.scale = 1
         
-        // ...
         
         emitter.emitterCells = [cell]
         
         view.layer.addSublayer(emitter)
-        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
