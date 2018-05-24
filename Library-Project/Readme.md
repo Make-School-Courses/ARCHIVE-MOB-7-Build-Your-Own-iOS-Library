@@ -14,14 +14,13 @@ you will need to provide a wider and more flexible solution than you would norma
 
 - [x] Make a UI Component
 - [x] Define your UI component. Describe what it is you intend to make
-- [x] Add it to the MakeSchool-18 repo here: https://github.com/MakeSchool-18/ui-components
 - [x] Make a folder with a README that includes your description
 - [x] UI Component covers edge cases and is not buggy
 - [x] UI Component has an easy `API` for developers to use
-- [x] Reviewed UI component with instructor
-- [x] Shipped to cocoapods.org
 - [x] Include documentation
 - [x] Comment your code
+- [x] Reviewed UI component with instructor
+- [x] Shipped to cocoapods.org
 
 Bonus Points:
 - [x] Shipped to Cocoacontrols.com
