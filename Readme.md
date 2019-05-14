@@ -1,4 +1,6 @@
-# UIKit & UIDesign
+# ARCHIVE - UIKit & UIDesign
+
+## NOTE: This repo is no longer maintained
 
 ## Course Overview
 
